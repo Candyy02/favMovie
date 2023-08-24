@@ -1,0 +1,75 @@
+.watch-list {
+  font-family: "Outfit" !important;
+  margin: 5rem;
+}
+.watch-list .header {
+  display: flex;
+  justify-content: space-between;
+}
+.watch-list .header .sort {
+  display: flex;
+  align-items: center;
+}
+.watch-list .header .sort img {
+  height: 4rem;
+}
+.watch-list .header .sort select {
+  font-size: 2rem;
+}
+.watch-list .movie {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 2rem;
+  background-color: rgb(136, 155, 199);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.watch-list .movie .head {
+  display: flex;
+  justify-content: space-between;
+}
+.watch-list .movie b {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.watch-list .movie img {
+  display: block;
+  width: 12rem;
+}
+.watch-list .movie .info h5 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #9ad7f6;
+}
+.watch-list .movie .info img {
+  display: block;
+  width: 3rem;
+}
+.watch-list .movie .info .if-1,
+.watch-list .movie .info .if-2,
+.watch-list .movie .info .if-3 {
+  display: flex;
+  gap: 1rem;
+}
+.watch-list .movie .info .if-2 {
+  border-left: 5px solid rgb(255, 255, 255);
+  padding-left: 1rem;
+}
+.watch-list .movie .info .if-3 {
+  display: flex;
+  align-items: center;
+  align-items: flex-end;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.watch-list .movie .info .if-3 img {
+  display: block;
+}
+.watch-list .movie .info .if-3 p {
+  margin: 0;
+}
+
+img,
+p {
+  margin: 0;
+}/*# sourceMappingURL=WatchList.css.map */

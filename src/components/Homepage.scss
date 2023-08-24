@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&family=Poppins:wght@400;500&display=swap");
+html {
+  font-size: 62.5%;
+  font-family: "Outfit", sans-serif;
+  color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  margin: auto;
+  --tw-bg-opacity: 1;
+  background-color: hsl(223 30% 9% / var(--tw-bg-opacity));
+  .side-bar {
+    position: sticky;
+    margin: 1rem 3rem;
+    height: 80vh;
+    width: 5%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2rem;
+    --tw-bg-opacity: 1;
+    background-color: hsl(223 36% 14% / var(--tw-bg-opacity));
+    img {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+  .main-container {
+    color: white;
+    .nav-bar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 2rem;
+      img {
+        height: 4rem;
+      }
+      input {
+        width: 70%;
+        height: 5rem;
+
+        color: white;
+        font-size: 3rem;
+        font-family: "Outfit", sans-serif;
+      }
+      input:focus {
+        border-bottom: 1px solid white;
+      }
+    }
+    button {
+      background-color: whitesmoke;
+      color: #000;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+      font-size: 2rem;
+    }
+    .main {
+      margin-top: 3rem;
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .link {
+          font-size: 2rem;
+          border: 2px solid white;
+          border-radius: 1rem;
+          padding: 0.5rem 1rem;
+        }
+      }
+      .pop-movies {
+        font-family: "Outfit", sans-serif;
+        display: flex;
+        justify-content: flex-start;
+        gap: 5rem;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        scrollbar-color: #6969dd #e0e0e0;
+        font-weight: 400;
+        .movie {
+          cursor: pointer;
+          position: relative;
+          width: 47rem;
+          height: 23rem;
+
+          img {
+            display: block;
+            width: 47rem;
+            height: 23rem;
+            opacity: 0.9;
+            border-radius: 1rem;
+          }
+          .description {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            h3 {
+              font-size: 2.5rem;
+              font-weight: 700;
+              margin: 0;
+            }
+            div {
+              display: flex;
+              justify-content: flex-start;
+              align-items: baseline;
+              gap: 1rem;
+
+              h4 {
+                font-size: 2rem;
+              }
+              p {
+                font-weight: 800;
+                font-size: 2rem;
+                padding: 0.1rem 1rem;
+                border-radius: 1rem;
+                background-color: rgb(255, 217, 0);
+                color: #000000;
+              }
+            }
+          }
+          border-radius: 1rem;
+        }
+      }
+      .upcoming {
+        .upcoming-movies {
+          font-family: "Outfit", sans-serif;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: flex-start;
+          gap: 3rem;
+          overflow: hidden;
+          font-weight: 400;
+          height: 105rem;
+          .movie {
+            cursor: pointer;
+            position: relative;
+            width: 20rem;
+            height: 32rem;
+
+            img {
+              display: block;
+              width: 20rem;
+              height: 28rem;
+
+              border-radius: 1rem;
+            }
+            .description {
+              h3 {
+                margin: 0;
+                font-size: 1.8rem;
+                font-weight: 400;
+                text-align: center;
+              }
+            }
+            border-radius: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+.pop-movies::-webkit-scrollbar {
+  width: 2rem;
+  height: 1rem;
+}
+
+.pop-movies::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+}
+
+.pop-movies::-webkit-scrollbar-thumb {
+  background-color: rgb(108, 124, 160);
+  outline: 1px solid slategrey;
+  border-radius: 1rem;
+}
+.movie {
+  img {
+    transform: scale3d(1, 1, 1);
+    transition: transform 0.5s ease-in-out;
+  }
+}
+.movie:hover {
+  img {
+    transform: scale3d(1.1, 1.1, 1);
+    transition: transform 0.5s ease-in-out;
+  }
+}
+.link {
+  text-decoration: none !important;
+  color: white !important;
+}
