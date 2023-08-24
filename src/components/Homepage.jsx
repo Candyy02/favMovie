@@ -10,7 +10,11 @@ function Homepage() {
 function Main() {
   return (
     <div className="main">
-      <PopularMovie sectionName={"Top rated 🔥"} type={"top_rated"} />
+      <PopularMovie
+        sectionName={"Top rated 🔥"}
+        type={"top_rated"}
+        link={"toprated"}
+      />
       <UpcomingMovie sectionName={"Upcoming ⬆️"} type={"upcoming"} />
       <PopularMovie sectionName={"Popular"} type={"popular"} />
       <UpcomingMovie sectionName={"Now playing ⬆️"} type={"now_playing"} />
@@ -73,7 +77,7 @@ function UpcomingMovie({ type, sectionName }) {
       <>
         <div className="header">
           <h2>{sectionName}</h2>
-          <Link to="nowplaying/1" className="link">
+          <Link to={`${type.replace("_", "")}/1`} className="link">
             See more
           </Link>
         </div>
