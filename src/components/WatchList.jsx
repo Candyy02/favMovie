@@ -3,7 +3,7 @@ import { useLocalStorageState } from "../useLocalStorageState";
 import "./WatchList.css";
 import { useEffect, useState } from "react";
 
-function WatchList() {
+function  WatchList() {
   const [movies, setMovies] = useLocalStorageState([], "watchlist");
   const [sortBy, setSortBy] = useState("addition");
   useEffect(() => {

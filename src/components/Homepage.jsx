@@ -82,7 +82,7 @@ function UpcomingMovie({ type, sectionName }) {
           </Link>
         </div>
         <div className="upcoming-movies">
-          {movies.map((mov) => (
+          {movies?.map((mov) => (
             <Link to={`/detail/${mov.id}`} key={mov.id} className="link">
               <Movie
                 key={mov.id}

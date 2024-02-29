@@ -20,7 +20,6 @@ function App() {
       <SideBar />
       <div className="col-lg-10 main-container">
         <NavBar query={query} setQuery={setQuery}></NavBar>
-
         <Routes>
           <Route path="/" element={<Homepage />}></Route>
           <Route path="/search" element={<SearchResult />}></Route>
